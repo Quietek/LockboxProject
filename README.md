@@ -1,4 +1,43 @@
 # LockboxProject
-A basic Lockbox project, final project for CSCI 3308 at CU Boulder
+Title:  A Compartmentalized Lockbox
 
-Software for a basic lockbox with multiple compartments and a 10-digit numpad, coded for use with an Arduino.
+Who: 	Harrison Snook
+	Tanner Tracy
+	Dale Blomgren
+	Dimitriy Tarasov
+
+Description:
+	Software for a basic lockbox with multiple compartments and a 10-digit numpad, coded for use with an Arduino, with basic network functionality for failsafe purposes.
+
+Vision Statement:
+	"A simple, safe, and interactive compartmentalized lockbox"	
+
+Motivation:
+	Keeping track of small things such as keys for many different people can often be a major hassle for a party host or businesses. An easy example of this is keys, where people will often bring their keys to a party but quickly forget where they put them. This device can be used to make sure keys aren't stolen, while you also don't have to keep them on your person at all times.
+
+Risks:
+	-Little experience with Arduinos in the past
+	-Little large time management experience
+	-Possibility of overcomplification of a simple idea
+	-Final product changes from prototyple with worse applicable usage due to last minute changes.
+	-Aesthetically displeasing
+
+Risk Mitigation:
+	-Look at tutorials and build an understanding of Arduino software and functionality
+	-Use checkpoints and use project management software to keep people on track and on topic
+	-Don't go out of original scope of project (e.g. don't change the functionality of the product halfway through development)
+	-Spend time in CAD to keep lock mechanisms and box itself looking pleasing, re-3d print as necessary.
+
+Requirements:
+	Requirement Type|Requirement	|ID	|Time Estimate	|	
+	----------------|---------------|-------|---------------|
+	User		|As a User, I want to have a locking box to prevent my keys from being stolen|1| xxx|
+
+Methodology:
+Agile
+
+Project Tracking Software:
+Trello
+
+Project Plan:
+
