@@ -32,9 +32,9 @@ Requirements:
 	Requirement Type|Requirement	|ID	|Time Estimate	|	
 	----------------|---------------|-------|---------------|
 	User		|As a User, I want to have a locking box to prevent my keys from being stolen|1| xxx|
-	User		|As a User, I want the box to inform me if its been compromised(unusual open)
-	Administrator	|As an Admin, I want a master passsword to open the box
-	Administrator	|As an Admin, I want the master key to be sent though a network.
+	User		|As a User, I want the box to inform me if its been compromised(unusual open)|2|xxx|
+	Administrator	|As an Admin, I want a master passsword to open the box|3|xxx|
+	Administrator	|As an Admin, I want the master key to be sent though a network.|4| xxx|
 Methodology:
 Agile
 
