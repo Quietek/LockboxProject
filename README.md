@@ -4,7 +4,7 @@ Title:  A Compartmentalized Lockbox
 Who: 	Harrison Snook
 	Tanner Tracy
 	Dale Blomgren
-	Dimitriy Tarasov
+	Dmitriy Tarasov
 
 Description:
 	Software for a basic lockbox with multiple compartments and a 10-digit numpad, coded for use with an Arduino, with basic network functionality for failsafe purposes.
@@ -32,7 +32,9 @@ Requirements:
 	Requirement Type|Requirement	|ID	|Time Estimate	|	
 	----------------|---------------|-------|---------------|
 	User		|As a User, I want to have a locking box to prevent my keys from being stolen|1| xxx|
-
+	User		|As a User, I want the box to inform me if its been compromised(unusual open)
+	Administrator	|As an Admin, I want a master passsword to open the box
+	Administrator	|As an Admin, I want the master key to be sent though a network.
 Methodology:
 Agile
 
