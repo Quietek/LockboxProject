@@ -1,9 +1,9 @@
 # LockboxProject
 Title:  A Compartmentalized Lockbox
 
-Who: 	Harrison Snook
-	Tanner Tracy
-	Dale Blomgren
+Who: 	Harrison Snook,
+	Tanner Tracy,
+	Dale Blomgren,
 	Dmitriy Tarasov
 
 Description:
