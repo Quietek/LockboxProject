@@ -45,6 +45,7 @@ Agile
 
 Project Tracking Software:
 Trello
+https://trello.com/lockbox1
 
-Project Plan:
+Project Plan: See Screenshot in Repository
 
