@@ -30,12 +30,15 @@ Risk Mitigation:
 
 Requirements:
 
-Requirement Type | Requirement	| ID	| Time Estimate	|	
+Requirement Type | Requirement	| ID	| Story Points	|	
 ---------------- | --------------------------------------------------------------------------------- | ----- | ------------- |
-User		 | As a User, I want to have a locking box to prevent my keys from being stolen | 1 | xxx | 
+User		 | As a User, I want to have a locking box to prevent my keys from being stolen | 1 | 1 | 
 User		 | As a User, I want the box to inform me if its been compromised(unusual open) | 2 | xxx |
-Administrator	 | As an Admin, I want a master passsword to open the box | 3 | xxx | 
+Administrator	 | As an Admin, I want a master passsword to open the box | 3 | 2 | 
 Administrator	 | As an Admin, I want the master key to be sent though a network. | 4 | xxx |
+Administrator    | As an Admin, I want to see what boxes are locked/unlocked | 5 | xxx | 
+User             | As a User, I want to create and use my own password | 6 | xxx|
+User             | As a User, I want a UI to interact with | 7 | xxx |
 
 Methodology:
 Agile
