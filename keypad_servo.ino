@@ -13,6 +13,7 @@ byte rowPins[ROWS] = {8, 7, 6, 5}; //connect to the row pinouts of the keypad
 byte colPins[COLS] = {4, 3, 2}; //connect to the column pinouts of the keypad
 
 Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
+#define speaker 9
 #define ledpin 12
 #define ledpin2 13
 String combo="1234";
@@ -23,6 +24,7 @@ Servo myservo;
 
 void setup()
 {
+  pinMode(speaker,OUTPUT);
   pinMode(ledpin,OUTPUT);
   pinMode(ledpin2,OUTPUT);
   Serial.begin(9600);
@@ -33,14 +35,19 @@ void loop()
 {
   key=keypad.getKey();
   if(key)
+  
   {
+    digitalWrite(speaker, HIGH);
+    delay(50);
+    digitalWrite(speaker, LOW);
+    
     if(key==combo[i]&&limiter==i){
       i++;
       limiter++;
       if(i>3&&limiter>3){
         digitalWrite(ledpin,HIGH);
         myservo.write(180);
-        delay(1000);
+        delay(2250);
         digitalWrite(ledpin,LOW);
         myservo.write(90);
         i=0;
@@ -51,8 +58,16 @@ void loop()
       limiter++;
       if(limiter>3){
        digitalWrite(ledpin2,HIGH);
-       delay(1000);
-       digitalWrite(ledpin2,LOW);  
+       delay(100);
+       digitalWrite(ledpin2,LOW); 
+       delay(100);
+       digitalWrite(ledpin2, HIGH); 
+       delay(100);
+       digitalWrite(ledpin2, LOW);
+       delay(100);
+       digitalWrite(ledpin2, HIGH);
+       delay(100);
+       digitalWrite(ledpin2, LOW);
        i=0;
        limiter=0;
       }  
