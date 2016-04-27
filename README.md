@@ -47,5 +47,22 @@ Project Tracking Software:
 Trello
 https://trello.com/lockbox1
 
-Project Plan: See Screenshot in Repository
+Project Status: Beta
+
+Repository Organization:
+	- OldCode folder to store past pushes to the repository.
+	- Current files are found in the root directory of the repository.
+
+Important files:
+	- keypadwithchangepassword.ino: Our base logic that the Arduino uses for the lockbox.
+	- base_surface.STL and Doors1final.STL: CAD representation of the lockbox.
+	- README.md: Important documentation and instructions on using the lockbox.
+
+Implementing keypadwithchangepassword.ino:
+	- First download keypadwithchangepassword.ino from repo and arduino development software.
+	- After setting up arduino development software, plug in arduino to your local machine.
+	- In arduino suite, find tools > port, and then select usb port that your arduino is currently connected to
+	- Go to sketch > Include Library > Manage Libraries.  Search Keypad.  Click and say "Install"
+	- There is an upload button on the top of the ide.  Upload, and test!
+
 
