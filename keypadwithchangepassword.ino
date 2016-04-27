@@ -1,3 +1,6 @@
+/*! \file keypadwithchangepassword.ino
+
+ */
 #include <Servo.h>
 #include <Key.h>
 #include <Keypad.h>
@@ -13,6 +16,7 @@ byte rowPins[ROWS] = {8, 7, 6, 5}; //connect to the row pinouts of the keypad
 byte colPins[COLS] = {4, 3, 2}; //connect to the column pinouts of the keypad
 
 Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
+
 #define speaker 9
 #define ledpin 12
 #define ledpin2 13
@@ -25,8 +29,10 @@ bool correct;
 bool passwordchange=false;
 
 
-
-//function used to indicate a wrong password was implemented, having a red LED flash several times
+//! A function.
+/!
+ function used to indicate a wrong password was implemented, having a red LED flash several times
+*/
 void passwordfailure(){ 
        digitalWrite(ledpin2,HIGH);
        delay(100);
@@ -43,7 +49,7 @@ void passwordfailure(){
        correct=-1;
        passwordchange=false;
 }
-// Function used to indicate a correct password was received
+//! Function used to indicate a correct password was received
 void passwordsuccess(){ 
         digitalWrite(ledpin,HIGH);
         myservo.write(180);
@@ -54,7 +60,7 @@ void passwordsuccess(){
         correct=-1;
 }
 
-//checks if the inputted the password is the correct password
+//!checks if the inputted the password is the correct password
 int passwordcheck(String input){
   if(combo==inputcombo){
     inputcombo="aaaa";
@@ -64,13 +70,13 @@ int passwordcheck(String input){
   return correct=0;
 }
 
-//used to play a sound from a speaker to indicate a keypress was received
+//!used to play a sound from a speaker to indicate a keypress was received
 void soundthing(){
     digitalWrite(speaker, HIGH);
     delay(50);
     digitalWrite(speaker, LOW);
 }
-//used to get user input for a combo to be compared to the password on the arduino
+//!used to get user input for a combo to be compared to the password on the arduino
 String password(){
   int i=0;
   while(true){
@@ -87,7 +93,7 @@ String password(){
     }
   }
 }
-//used to reset and change the password on the arduino
+//!used to reset and change the password on the arduino
 String newpassword(){
   digitalWrite(ledpin2,HIGH);
   digitalWrite(ledpin,HIGH);
@@ -108,7 +114,7 @@ String newpassword(){
   }
 }
 
-//setup for servo and LEDs
+//!setup for servo and LEDs
 void setup()
 {
   pinMode(speaker,OUTPUT);
@@ -117,7 +123,7 @@ void setup()
   Serial.begin(9600);
   myservo.attach(11);
 }
-//loop used to loop through password checks and different functions
+//!loop used to loop through password checks and different functions
 void loop()
 {
   password();
@@ -132,3 +138,4 @@ void loop()
     passwordfailure();
   }
 }
+
